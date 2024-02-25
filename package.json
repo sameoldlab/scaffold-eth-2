@@ -7,7 +7,7 @@
 		"account": "pnpm -F @se-2/foundry account",
 		"chain": "pnpm -F @se-2/foundry chain",
 		"compile": "pnpm -F @se-2/foundry compile",
-		"deploy": "pnpm -F @se-2/foundry deploy",
+		"depl": "pnpm -F @se-2/foundry depl",
 		"deploy:verify": "pnpm -F @se-2/foundry deploy:verify",
 		"fork": "pnpm -F @se-2/foundry fork",
 		"foundry:lint": "pnpm -F @se-2/foundry lint",
