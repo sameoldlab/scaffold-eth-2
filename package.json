@@ -2,35 +2,28 @@
   "name": "se-2",
   "version": "0.0.1",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/hardhat",
-      "packages/nextjs"
-    ]
-  },
   "scripts": {
-    "account": "yarn workspace @se-2/hardhat account",
-    "chain": "yarn workspace @se-2/hardhat chain",
-    "fork": "yarn workspace @se-2/hardhat fork",
-    "deploy": "yarn workspace @se-2/hardhat deploy",
-    "verify": "yarn workspace @se-2/hardhat verify",
-    "hardhat-verify": "yarn workspace @se-2/hardhat hardhat-verify",
-    "compile": "yarn workspace @se-2/hardhat compile",
-    "generate": "yarn workspace @se-2/hardhat generate",
-    "hardhat:lint": "yarn workspace @se-2/hardhat lint",
-    "hardhat:lint-staged": "yarn workspace @se-2/hardhat lint-staged",
-    "hardhat:test": "yarn workspace @se-2/hardhat test",
-    "test": "yarn hardhat:test",
-    "start": "yarn workspace @se-2/nextjs dev",
-    "next:lint": "yarn workspace @se-2/nextjs lint",
-    "next:format": "yarn workspace @se-2/nextjs format",
-    "next:check-types": "yarn workspace @se-2/nextjs check-types",
-    "postinstall": "husky install",
-    "precommit": "lint-staged",
-    "vercel": "yarn workspace @se-2/nextjs vercel",
-    "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo"
+		
+		"account": "pnpm -F @se-2/foundry account",
+		"chain": "pnpm -F @se-2/foundry chain",
+		"compile": "pnpm -F @se-2/foundry compile",
+		"deploy": "pnpm -F @se-2/foundry deploy",
+		"deploy:verify": "pnpm -F @se-2/foundry deploy:verify",
+		"fork": "pnpm -F @se-2/foundry fork",
+		"foundry:lint": "pnpm -F @se-2/foundry lint",
+		"foundry:test": "pnpm -F @se-2/foundry test",
+		"generate": "pnpm -F @se-2/foundry generate",
+		"postinstall": "husky install",
+		"next:check-types": "pnpm -F @se-2/nextjs check-types",
+		"next:format": "pnpm -F @se-2/nextjs format",
+		"next:lint": "pnpm -F @se-2/nextjs lint",
+		"precommit": "lint-staged",
+		"start": "pnpm -F @se-2/nextjs dev",
+		"test": "pnpm foundry:test",
+		"vercel": "pnpm -F @se-2/nextjs vercel",
+		"vercel:yolo": "pnpm -F @se-2/nextjs vercel:yolo",
+		"verify": "pnpm -F @se-2/foundry verify"
   },
-  "packageManager": "yarn@3.2.3",
   "devDependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3"
